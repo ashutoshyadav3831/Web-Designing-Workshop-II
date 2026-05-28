@@ -1,0 +1,230 @@
+body {
+  margin: 0;
+  background: #0f172a;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+
+nav {
+  background: rgba(30, 41, 59, 0.8);
+
+  backdrop-filter: blur(10px);
+
+  padding: 20px 40px;
+
+  display: flex;
+
+  gap: 30px;
+
+  position: sticky;
+
+  top: 0;
+
+  border-bottom: 1px solid #334155;
+}
+
+nav a {
+  color: white;
+
+  text-decoration: none;
+
+  font-size: 20px;
+
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #38bdf8;
+}
+
+/* MAIN CONTAINER */
+
+.container {
+  padding: 60px;
+}
+
+/* HERO SECTION */
+
+.hero-title {
+  font-size: 72px;
+
+  line-height: 1.1;
+
+  margin-bottom: 25px;
+
+  max-width: 900px;
+}
+
+.hero-text {
+  font-size: 24px;
+
+  color: #94a3b8;
+
+  max-width: 700px;
+
+  line-height: 1.6;
+}
+
+/* DASHBOARD */
+
+.card-container {
+  display: flex;
+
+  gap: 25px;
+
+  margin-top: 30px;
+
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #1e293b;
+
+  padding: 30px;
+
+  width: 240px;
+
+  border-radius: 18px;
+
+  transition: 0.3s;
+
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h2 {
+  margin-bottom: 15px;
+}
+
+.card p {
+  font-size: 30px;
+
+  font-weight: bold;
+
+  color: #38bdf8;
+}
+
+/* ROADMAP */
+
+.topic {
+  background: #1e293b;
+
+  padding: 18px;
+
+  margin-bottom: 15px;
+
+  border-radius: 14px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+
+  transition: 0.3s;
+}
+
+.topic:hover {
+  transform: scale(1.02);
+}
+
+.topic span {
+  font-size: 20px;
+}
+
+/* PROGRESS BAR */
+
+.progress-bar {
+  width: 450px;
+
+  height: 28px;
+
+  background: #334155;
+
+  border-radius: 30px;
+
+  overflow: hidden;
+
+  margin-bottom: 30px;
+}
+
+.progress-fill {
+  height: 100%;
+
+  background: linear-gradient(
+    90deg,
+    #38bdf8,
+    #00ff88
+  );
+
+  transition: 0.4s;
+}
+
+/* BUTTON */
+
+button {
+  background: linear-gradient(
+    90deg,
+    #ef4444,
+    #dc2626
+  );
+
+  color: white;
+
+  border: none;
+
+  padding: 14px 24px;
+
+  border-radius: 10px;
+
+  font-size: 16px;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+/* TEXTAREA */
+
+textarea {
+  width: 100%;
+
+  max-width: 800px;
+
+  height: 300px;
+
+  background: #1e293b;
+
+  color: white;
+
+  border: 1px solid #334155;
+
+  border-radius: 14px;
+
+  padding: 20px;
+
+  margin-top: 20px;
+
+  font-size: 18px;
+
+  resize: none;
+}
+
+/* CHECKBOX */
+
+input[type="checkbox"] {
+  width: 20px;
+
+  height: 20px;
+
+  cursor: pointer;
+}
