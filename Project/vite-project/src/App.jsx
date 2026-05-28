@@ -10,7 +10,7 @@ import Notes from "./pages/Notes";
 function App() {
   return (
     <>
-      <Navbar />
+      <navbar />
 
       <Routes>
         <Route path="/" element={<Home />} />
