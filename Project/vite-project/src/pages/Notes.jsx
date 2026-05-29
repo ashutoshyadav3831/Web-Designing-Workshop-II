@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 
 function Notes() {
-
   const [notes, setNotes] = useState(
     localStorage.getItem("notes") || ""
   );
@@ -10,18 +9,39 @@ function Notes() {
     localStorage.setItem("notes", notes);
   }, [notes]);
 
+  const clearNotes = () => {
+    setNotes("");
+  };
+
+  const wordCount =
+    notes.trim() === ""
+      ? 0
+      : notes.trim().split(/\s+/).length;
+
+  const charCount = notes.length;
+
   return (
-    <div style={{ padding: "30px" }}>
-      <h1>Notes</h1>
+    <div className="container">
+      <h1>Study Notes</h1>
+
+      <p>
+        Words: {wordCount} | Characters:{" "}
+        {charCount}
+      </p>
 
       <textarea
-        rows="10"
-        cols="50"
         value={notes}
         onChange={(e) =>
           setNotes(e.target.value)
         }
+        placeholder="Write your notes here..."
       />
+
+      <br />
+
+      <button onClick={clearNotes}>
+        Clear Notes
+      </button>
     </div>
   );
 }

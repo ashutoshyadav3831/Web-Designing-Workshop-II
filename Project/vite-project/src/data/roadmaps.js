@@ -29,4 +29,14 @@ export const reactRoadmap = [
     topic: "React Router",
     completed: false,
   },
+  {
+    id: 7,
+    topic: "Context API",
+    completed: false,
+  },
+  {
+    id: 8,
+    topic: "Custom Hooks",
+    completed: false,
+  }
 ];
