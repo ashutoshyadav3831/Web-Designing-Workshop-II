@@ -25,6 +25,6 @@ public class EmployeeController {
     @DeleteMapping("/{id}")
     public String deleteEmployee(@PathVariable int id) {
         repository.deleteById(id);
-        return "employee Deleted Successfully";
+        return "Employee Deleted Successfully";
     }
 }
